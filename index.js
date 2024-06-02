@@ -13,3 +13,10 @@ if(cross) {
         nav.classList.remove("active");
     })
 }
+
+const allImg = document.querySelectorAll(".small-img-col");
+for(let i=0; i<allImg.length; i++) {
+    allImg[i].addEventListener("click", function(){
+        document.getElementById("MainImg").setAttribute("src", this.querySelector("img").getAttribute("src"));
+    })
+}
