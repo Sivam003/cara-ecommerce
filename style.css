@@ -602,6 +602,63 @@ footer .follow i:hover {
     line-height: 28px;
 }
 
+#page-header.about-header {
+    background-image: url("img/about/banner.png");
+}
+
+#about-details {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-details .details {
+    width: 48%;
+}
+
+#about-details img {
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: fit-content;
+}
+
+#about-details .para h2 {
+    font-weight: 700;
+}
+
+#about-details .para p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 8px;
+}
+
+#about-details .para marquee {
+    font-size: 24px;
+    color: #fff;
+    background-color: #088178;
+    padding: 2px 0;
+}
+
+#about-app {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 80%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+
+
 @media(max-width : 799px) {
     #navbar {
         display: flex;
@@ -711,6 +768,23 @@ footer .follow i:hover {
     #pagination a {
         width: 7%;
     }
+
+    #about-details {
+        flex-direction: column;
+    }
+    #about-details img,
+    #about-details .details {
+        width: 100%;
+    }
+
+    #about-details .details h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
 }
 
 @media (max-width : 477px) {
@@ -775,5 +849,22 @@ footer .follow i:hover {
 
     #prodetails .single-pro-image {
         width: 100%;
+    }
+
+    #about-details {
+        padding: 30px 40px;
+    }
+
+    #about-app {
+        padding: 30px 40px;
+    }
+
+    #about-app .video,
+    #about-app .video video{
+        width: 100%;
+    }
+
+    #feature {
+        padding: 10px;
     }
 }
