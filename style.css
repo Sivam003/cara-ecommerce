@@ -412,7 +412,8 @@ button.trans {
     color: #ffbd27;
 }
 
-#newsletter .form button {
+#newsletter .form button,
+#form-details button {
     padding: 20px;
     cursor: pointer;
     background-color: #088178;
@@ -657,6 +658,111 @@ footer .follow i:hover {
     border-radius: 24px;
 }
 
+#contact-details {
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    padding: 20px;
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+    font-weight: 700;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+#contact-details .details h3 {
+    margin-top: 20px;
+}
+
+#contact-details .details li {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+}
+
+#contact-details .details li i {
+    font-size: 16px;
+    padding: 18px 0;
+}
+
+#contact-details .details li p {
+    margin-left: 20px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    margin: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ecc9c9;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
+    outline: none;
+    border: 1px solid #ecc9c9;
+    font-size: 16px;
+}
+
+#form-details form button {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.people {
+    padding: 20px;
+}
+
+.people div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.people div span {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.people div p {
+    padding: 10px;
+    line-height: 26px;
+}
 
 
 @media(max-width : 799px) {
@@ -785,6 +891,34 @@ footer .follow i:hover {
     #about-app .video {
         width: 100%;
     }
+
+    #contact-details {
+        display: block;
+    }
+
+    #contact-details .details,
+    #contact-details .map {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-details .details li {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .people {
+        padding: 0;
+    }
+
+    .people p {
+        margin: 0;
+        line-height: 10px;
+    }
+    .people div p {
+        line-height: 20px;
+    }
 }
 
 @media (max-width : 477px) {
@@ -866,5 +1000,35 @@ footer .follow i:hover {
 
     #feature {
         padding: 10px;
+    }
+
+    #contact-details {
+        display: block;
+    }
+
+    #contact-details .details,
+    #contact-details .map {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-details .details li {
+        justify-content: start;
+        margin: 0;
+    }
+
+    #contact-details,
+    #form-details {
+        padding: 20px 20px;
+        margin: 0;
+    }
+
+    #form-details {
+        display: block;
+    }
+    #form-details form {
+        width: 100%;
+        text-align: center;
     }
 }
